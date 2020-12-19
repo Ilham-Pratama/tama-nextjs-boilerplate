@@ -1,15 +1,35 @@
 {
-  "name": "formpad",
-  "version": "0.1.0",
-  "private": true,
+  "name": "tama-nextjs-boilerplate",
+  "version": "1.0.0",
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "eslint '*/**/*.{js,jsx,ts,tsx}' --quiet --fix",
+    "svgr": "svgr -d src/components/Icons/ public/svgs/"
   },
   "dependencies": {
+    "@types/react": "^17.0.0",
     "next": "10.0.3",
     "react": "17.0.1",
     "react-dom": "17.0.1"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^3.1.3",
+    "@svgr/cli": "^5.5.0",
+    "@types/node": "^14.14.14",
+    "@typescript-eslint/eslint-plugin": "^4.10.0",
+    "@typescript-eslint/parser": "^4.10.0",
+    "autoprefixer": "^10.1.0",
+    "eslint": "^7.15.0",
+    "eslint-config-prettier": "^7.0.0",
+    "eslint-plugin-prettier": "^3.3.0",
+    "eslint-plugin-react": "^7.21.5",
+    "postcss": "^8.2.1",
+    "postcss-import": "^14.0.0",
+    "prettier": "^2.2.1",
+    "prettier-eslint": "^12.0.0",
+    "tailwindcss": "^2.0.2"
   }
 }

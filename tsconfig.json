@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "paths": {
+      "~components/*": [
+        "src/components/*"
+      ],
+      "~constants/*": [
+        "src/constants/*"
+      ],
+      "~styles/*": [
+        "src/styles/*"
+      ],
+      "~libs/*": [
+        "src/libs/*"
+      ],
+      "~utils/*": [
+        "src/utils/*"
+      ]
+    },
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true
+  },
+  "include": [
+    "**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    ".next"
+  ]
+}
