@@ -3,9 +3,6 @@ module.exports = {
   darkMode: 'media',
   theme: {
     extend: {
-      fontFamily: {
-        sans: ['"Quicksand"', 'sans-serif']
-      },
       backgroundColor: {
         'semi-trans-black': '#000000a6'
       },
