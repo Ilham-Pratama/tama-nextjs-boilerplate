@@ -1,6 +1,6 @@
 {
-  "name": "super-vote",
-  "version": "0.0.1",
+  "name": "tama-nextjs-boilerplate",
+  "version": "1.0.0",
   "private": false,
   "scripts": {
     "dev": "next dev",

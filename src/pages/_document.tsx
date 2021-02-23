@@ -20,7 +20,6 @@ class MyDocument extends Document {
         <Head />
         <body>
           <Main />
-          <script src="https://extension-files.twitch.tv/helper/v1/twitch-ext.min.js"></script>
           <NextScript />
         </body>
       </Html>
