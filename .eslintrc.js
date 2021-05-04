@@ -1,24 +1,22 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaVersion: 2018,
+    sourceType: 'module'
+  },
+  plugins: ['@typescript-eslint', 'react-hooks'],
   extends: [
     'plugin:react/recommended',
-    'plugin:@typescript-eslint/recommended',
-    'prettier/@typescript-eslint',
-    'prettier/react',
-    'plugin:prettier/recommended'
+    'plugin:@typescript-eslint/recommended'
   ],
-  parserOptions: {
-    ecmaVersion: 2020,
-    sourceType: 'module',
-    ecmaFeatures: {
-      jsx: true
-    }
-  },
   rules: {
-    // Add your rules here
-    'import/prefer-default-export': ['off'],
-    'react/jsx-props-no-spreading': ['off'],
-    'react/jsx-filename-extension': ['error', { extensions: ['.ts', '.tsx'] }],
-    'comma-dangle': ['error', 'never']
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn'
+  },
+  settings: {
+    react: {
+      pragma: 'React',
+      version: 'detect'
+    }
   }
 };
